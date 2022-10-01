@@ -1,0 +1,81 @@
+
+
+.spanborder {
+  visibility: visible;
+  border: 2px soid rgb(0, 0, 0);
+  border-radius: 5px;
+  background-color: aqua;
+}
+
+.d-flex input {
+  margin: 0.9em 0em;
+}
+
+.d-flex button {
+  margin: 1.5em 0.6em;
+  padding: 0.3em 2.4em;
+}
+
+.container table {
+  margin: 1em 6em;
+}
+
+th {
+  border: solid 2px;
+  border-color: black;
+  border-radius: 2px;
+}
+
+table .btnedit {
+  color: rgb(33, 212, 30);
+  cursor: pointer;
+}
+
+table .btndelete {
+  color: red;
+  cursor: pointer;
+}
+
+table .btnselect {
+  color: rgb(21, 0, 255);
+  cursor: pointer;
+}
+/*BTNs*/
+.btn-icons {
+  flex-direction: column;
+}
+
+/* messages */
+.insertmsg,
+.updatemsg,
+.deletemsg {
+  position: absolute;
+  top: -40px;
+}
+
+.movedown {
+  animation: slideup 4.5s ease;
+}
+
+@keyframes slideup {
+  50% {
+    top: 0;
+  }
+  100% {
+    top: -40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  table,
+  table thead,
+  table tbody,
+  table th,
+  table td,
+  table tr {
+    display: block;
+    display: flex;
+    flex-direction: column;
+   
+  }
+}
