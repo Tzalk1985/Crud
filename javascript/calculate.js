@@ -22,7 +22,7 @@ function Multiby() {
     document.getElementById("yellowsum").innerHTML = "YELLOW" + " = " + YELLOWSUM.toFixed(3) + " kg";
     document.getElementById("bluesum").innerHTML = "BLUE" + " = " + BLUESUM.toFixed(3) + " kg";
     document.getElementById("sum").innerHTML = "Σύνολο DMPP :" + " " + SUM.toFixed(3) + " kg";
-    document.getElementById("k/t").innerHTML = "KILOS per TON : " + KT.toFixed(3) + " k/t :";
+    document.getElementById("k/t").innerHTML = "KILOS per TON : " + KT.toFixed(3) + " k/t";
 
 
 }
@@ -54,5 +54,5 @@ function DivitBy() {
     document.getElementById("yellowsum1").innerHTML = "YELLOW" + " = " + YELLOWSUM1.toFixed(3) + " kg";
     document.getElementById("bluesum1").innerHTML = "BLUE" + " = " + BLUESUM1.toFixed(3) + " kg";
     document.getElementById("sum1").innerHTML = "Σύνολο DMPP σε τονους :" + " " + tons.toFixed(3) + " Tons";
-    document.getElementById("k/t1").innerHTML = "KILOS per TON : " + KT1.toFixed(3) + " k/t :";
+    document.getElementById("k/t1").innerHTML = "KILOS per TON : " + KT1.toFixed(3) + " k/t";
 }

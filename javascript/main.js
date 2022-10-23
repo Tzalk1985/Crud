@@ -145,6 +145,7 @@ function table() {
                     })
                 })
             })
+            
         } else {
             notfound.textContent = "No record found in the database"
         }
@@ -170,7 +171,7 @@ function editbtn(event) {
 function selectbtn(event) {
     let id = parseInt(event.target.dataset.id);
     database.dmppRecipes.get(id, data => {
-        DMPPID.value = data.ID || 0;
+        DMPPID.value = data.ID  || 0;
         DMPP.value = data.DMPP || "";
         DMP.value = data.DMP || "";
         H3PO4.value = data.H3PO4 || "";

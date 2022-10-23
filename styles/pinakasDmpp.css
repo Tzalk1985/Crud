@@ -1,10 +1,37 @@
+.w-50 p{
+  font-size: 16px;
+  text-align: center;
+  width: 20%;
+  border-width: 4px;
+  border-style: solid;
+  color: rgb(251, 251, 251);
+  background-color:#17a2b8;
+  border-image: linear-gradient(to right, rgb(245, 234, 14), rgb(21, 231, 21)) 1;
+  margin-bottom: auto;
+}
 
-
-.spanborder {
+.w-50 input{
+  background:rgba(13, 218, 170, 0.092);
+}
+.ypologismos{
+  width: 50%;
+  margin: 0px 400px;
+  border: solid 2px black;
+  border-radius: 2rem;
+  font-size: large;
+  color: #fff;
+  background-color: #17a2b8;
   visibility: visible;
-  border: 2px soid rgb(0, 0, 0);
-  border-radius: 5px;
-  background-color: aqua;
+}
+
+
+.diahorismos{
+  width: 50%;
+  border: solid 2px rgb(234, 255, 0);
+  border-radius: 2rem;
+  font-size: large;
+  color: #fff;
+  background-color: #212529;
 }
 
 .d-flex input {
@@ -17,13 +44,22 @@
 }
 
 .container table {
-  margin: 1em 6em;
+  margin: 50px;
+  width: 100%;
 }
 
 th {
   border: solid 2px;
   border-color: black;
   border-radius: 2px;
+  font-size: large;
+  
+}
+
+td{
+  border: solid 2px aqua;
+  border-radius: 5px;
+  font-size: medium;
 }
 
 table .btnedit {
@@ -57,6 +93,7 @@ table .btnselect {
   animation: slideup 4.5s ease;
 }
 
+
 @keyframes slideup {
   50% {
     top: 0;
@@ -76,6 +113,5 @@ table .btnselect {
     display: block;
     display: flex;
     flex-direction: column;
-   
   }
 }
