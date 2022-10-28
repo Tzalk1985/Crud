@@ -1,19 +1,22 @@
-.w-50 p{
+.w-50 p {
   font-size: 16px;
-  text-align: center;
-  width: 20%;
-  border-width: 4px;
+  text-align: left;
+  font-family: Lucida Sans;
+  width: 25%;
+  border-width: 2px;
   border-style: solid;
-  color: rgb(251, 251, 251);
-  background-color:#17a2b8;
+  color: rgb(1, 0, 0);
+  background-color: #ffffff39;
   border-image: linear-gradient(to right, rgb(245, 234, 14), rgb(21, 231, 21)) 1;
   margin-bottom: auto;
 }
 
-.w-50 input{
-  background:rgba(13, 218, 170, 0.092);
+.w-50 input {
+  background: rgba(13, 218, 170, 0.092);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.ypologismos{
+.ypologismos {
   width: 50%;
   margin: 0px 400px;
   border: solid 2px black;
@@ -24,8 +27,7 @@
   visibility: visible;
 }
 
-
-.diahorismos{
+.diahorismos {
   width: 50%;
   border: solid 2px rgb(234, 255, 0);
   border-radius: 2rem;
@@ -43,9 +45,31 @@
   padding: 0.3em 2.4em;
 }
 
+#dmppname {
+  margin: 1.5rem;
+  border-radius: 2.2rem;
+  background-color: #212529;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#dmppname1 {
+  margin: 1.5rem;
+  background-color: #17a2b8;
+  border-radius: 2.2rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .container table {
   margin: 50px;
   width: 100%;
+}
+
+.insert input {
+  margin: 1.4rem 0rem;
+  width: 80%;
+  height: 50%;
 }
 
 th {
@@ -53,10 +77,9 @@ th {
   border-color: black;
   border-radius: 2px;
   font-size: large;
-  
 }
 
-td{
+td {
   border: solid 2px aqua;
   border-radius: 5px;
   font-size: medium;
@@ -92,7 +115,6 @@ table .btnselect {
 .movedown {
   animation: slideup 4.5s ease;
 }
-
 
 @keyframes slideup {
   50% {

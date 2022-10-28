@@ -142,10 +142,26 @@ function table() {
                         i.className += "fas fa-check btnselect"
                         i.setAttribute('data-id', data.ID);
                         i.onclick = selectbtn;
+
+                    })
+                    createElement("td", tr, td => {
+                        createElement("a", td, a => {
+                            a.className += "fa-solid fa-link link"
+                            a.setAttribute('href', "#DMPPID")
+                            a.onclick = a;
+                        })
                     })
                 })
+                //<i class="fa-solid fa-link"></i>
+                //      createElement( "a" ,x, t =>{
+                //          const x = document.createElement("A");
+                // const t = document.createTextNode("Tutorials");
+                //       x.setAttribute("href", "https://www.w3schools.com");
+                //       x.appendChild(t);
+                //       document.body.appendChild(x);
+                //      }) 
             })
-            
+
         } else {
             notfound.textContent = "No record found in the database"
         }
@@ -171,7 +187,7 @@ function editbtn(event) {
 function selectbtn(event) {
     let id = parseInt(event.target.dataset.id);
     database.dmppRecipes.get(id, data => {
-        DMPPID.value = data.ID  || 0;
+        DMPPID.value = data.ID || 0;
         DMPP.value = data.DMPP || "";
         DMP.value = data.DMP || "";
         H3PO4.value = data.H3PO4 || "";
@@ -203,34 +219,10 @@ function getMsg(flag, element) {
     }
 }
 
+/*
+var mydiv = document.getElementById("selectbtn");
+var aTag = document.createElement('a');
+aTag.setAttribute('href',"http://127.0.0.1:5501/PinakasDmpp.html");
+aTag.innerText = "fas fa-check btnselect";
+mydiv.appendChild(aTag);*/
 
-
-
-/*function Multiby() {
-    DMPP = document.getElementById("DMPP").value;
-    DMP = parseFloat(document.getElementById("DMP").value);
-    H3PO4 = parseFloat(document.getElementById("H3PO4").value);
-    COLOR = parseFloat(document.getElementById("COLOR").value);
-    YELLOW = parseFloat(document.getElementById("YELLOW").value);
-    BLUE = parseFloat(document.getElementById("BLUE").value);
-    tons = parseFloat(document.getElementById("tons").value);
-
-    DMPSUM = tons * DMP
-    H3PO4SUM = tons * H3PO4
-    COLORSUM = tons * COLOR
-    YELLOWSUM = tons * YELLOW
-    BLUESUM = tons * BLUE
-
-    SUM = (DMP + H3PO4 + COLOR + YELLOW + BLUE) * tons;
-    KT = DMP + H3PO4 + COLOR + YELLOW + BLUE;
-    document.getElementById("dmppname").innerHTML = DMPP + " : ";
-    document.getElementById("dmpsum").innerHTML = "DMP" + " = " + DMPSUM.toFixed(3) + " kg";
-    document.getElementById("h3po4sum").innerHTML = "H3PO4" + " = " + H3PO4SUM.toFixed(3) + " kg";
-    document.getElementById("colorsum").innerHTML = "COLOR" + " = " + COLORSUM.toFixed(3) + " kg";
-    document.getElementById("yellowsum").innerHTML = "YELLOW" + " = " + YELLOWSUM.toFixed(3) + " kg";
-    document.getElementById("bluesum").innerHTML = "BLUE" + " = " + BLUESUM.toFixed(3) + " kg";
-    document.getElementById("sum").innerHTML = "Σύνολο DMPP :" + " " + SUM.toFixed(3) + " kg";
-    document.getElementById("k/t").innerHTML = "KILOS per TON : " + KT.toFixed(3) + " k/t :";
-
-    
-}*/
