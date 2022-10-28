@@ -3,12 +3,9 @@
   text-align: left;
   font-family: Lucida Sans;
   width: 25%;
-  border-width: 2px;
-  border-style: solid;
   color: rgb(1, 0, 0);
-  background-color: #ffffff39;
-  border-image: linear-gradient(to right, rgb(245, 234, 14), rgb(21, 231, 21)) 1;
   margin-bottom: auto;
+  
 }
 
 .w-50 input {
@@ -61,8 +58,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.container td:nth-child(2){
+  font-weight: bold;
+}
+
 .container table {
-  margin: 50px;
+  margin: 50px -40px;
   width: 100%;
 }
 
@@ -125,15 +126,4 @@ table .btnselect {
   }
 }
 
-@media screen and (max-width: 480px) {
-  table,
-  table thead,
-  table tbody,
-  table th,
-  table td,
-  table tr {
-    display: block;
-    display: flex;
-    flex-direction: column;
-  }
-}
+
